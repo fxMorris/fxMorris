@@ -10,7 +10,7 @@ func longestPalindrome(s string) string {
 	}
 	m := make(map[int]int)
 	c := 0   //最长回文子串中心
-	len := 1 //覆盖半径
+	len := 1 //长度
 	m[0] = 1
 	for i := 1; i < 2*n-1; i++ {
 		var l, r int
